@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homework Club O.C.T.O. - Club de tareas y apoyo académico integral para niños. Refuerzo escolar, inglés, bienestar emocional y actividades recreativas.">
+    <meta name="keywords" content="tareas, refuerzo escolar, apoyo académico, club de tareas, educación emocional, psicología infantil, actividades recreativas">
+    <meta name="author" content="Homework Club O.C.T.O.">
+    <link rel="canonical" href="https://example.com/">
+    <meta name="theme-color" content="#2C3E50">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Homework Club O.C.T.O. - Más que tareas, un espacio para brillar">
+    <meta property="og:description" content="Apoyo académico integral y bienestar emocional para niños">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:type" content="website">
+    
+    <title>Homework Club O.C.T.O. - Más que tareas, un espacio para brillar</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" as="style" onload="this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo" >
+                    <img src="images/logo.png" alt="O.C.T.O. Logo" style="display: none;">
+                    <span style="display: none;">O.C.T.O.</span>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                    <li><a href="#galeria" class="nav-link">Galería</a></li>
+                    <li><a href="#precios" class="nav-link">Precios</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section id="inicio" class="hero-carousel">
+        <div id="carouselContainer" class="carousel-container" role="region" aria-label="Carrusel principal">
+            <div class="carousel-slide active">
+                <img src="images/carousel1.png" alt="Homework Club O.C.T.O.">
+                <div class="carousel-overlay-text" data-align="left">
+                    <img src="images/logo.png" alt="O.C.T.O. Logo" class="carousel-logo">
+                    <div class="carousel-text">
+                        <h2>Un lugar para aprender y <span style="color: #F4D03F;">brillar</span></h2>
+                        <p>
+                            ¡<span style="color: #27B0CD;">APOYO ACADÉMICO</span> y 
+                            <span style="color: #ec9f3a;">BIENESTAR EMOCIONAL</span> !
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/carousel2.png" alt="Apoyo Académico Integral" loading="lazy">
+                <div class="carousel-overlay-text" data-align="center">
+                    <img src="images/logo.png" alt="O.C.T.O. Logo" class="carousel-logo">
+                    <div class="carousel-text">
+                        <h2>ENGLISH <span style="color: #ec9f3a;">LEARNING</span>!</h2>
+                        <p>
+                            <span style="color: #94DDC9;">Métodos dinámicos y divertidos para aprender inglés</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/carousel3.png" alt="Diversión y Aprendizaje" loading="lazy">
+                <div class="carousel-overlay-text" data-align="right">
+                    <img src="images/logo.png" alt="O.C.T.O. Logo" class="carousel-logo">
+                    <div class="carousel-text">
+                        <h2>FINES RECREATIVOS</h2>
+                        <h2><span style="color: #ec9f3a;">BIENESTAR EMOCIONAL</span></h2>
+                        <p>
+                            <span style="color: #7DD3C0;">Gastronomía</span> | 
+                            <span style="color: #F4D03F;">Pintura</span> | 
+                            <span style="color: #FFB6C1;">Cine</span> | 
+                            <span style="color: #D4A5D4;">Baile</span> | 
+                            <span style="color: #2BBFE0;">Manualidades</span> | 
+                            <span style="color: #D2F2A8;">Manejo de Emociones</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control prev" id="prevSlide" aria-controls="carouselContainer" aria-label="Slide anterior">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-control next" id="nextSlide" aria-controls="carouselContainer" aria-label="Siguiente slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="carousel-indicators" id="carouselIndicators"></div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">¿Por Qué Elegirnos?</h2>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Ambiente Cómodo</h3>
+                    <p>Espacios diseñados para la concentración y el aprendizaje efectivo</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Grupos Pequeños</h3>
+                    <p>Atención 100% personalizada para cada estudiante</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horario Fijo</h3>
+                    <p>Lunes a Viernes de 2:00 PM a 6:30 PM</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Equipo Profesional</h3>
+                    <p>Profesores altamente calificados y comprometidos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Nuestros Servicios</h2>
+            <p class="section-subtitle animate-on-scroll">Ofrecemos un acompañamiento integral y personalizado</p>
+            
+            <div class="services-grid">
+                <!-- Apoyo Académico -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon academic">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Apoyo Académico</h3>
+                    <div class="service-image">
+                        <img src="images/teacher-board.png" alt="Maestra enseñando" loading="lazy">
+                    </div>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Refuerzo en Matemáticas</li>
+                        <li><i class="fas fa-check"></i> Lectoescritura</li>
+                        <li><i class="fas fa-check"></i> Ciencias Naturales y Sociales</li>
+                        <li><i class="fas fa-check"></i> Apoyo en Tareas</li>
+                        <li><i class="fas fa-check"></i> Preparación para Exámenes</li>
+                    </ul>
+                </div>
+
+                <!-- English Learning -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon english">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>English Learning</h3>
+                    <div class="service-image">
+                        <img src="images/teacher-student.png" alt="Atención personalizada" loading="lazy">
+                    </div>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Métodos dinámicos de aprendizaje</li>
+                        <li><i class="fas fa-check"></i> Conversación interactiva</li>
+                        <li><i class="fas fa-check"></i> Gramática y vocabulario</li>
+                        <li><i class="fas fa-check"></i> Lectura y escritura</li>
+                        <li><i class="fas fa-check"></i> Preparación para certificaciones</li>
+                    </ul>
+                </div>
+
+                <!-- Bienestar Emocional -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon emotional">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Bienestar Emocional</h3>
+                    <div class="service-image">
+                        <img src="images/psychologist.png" alt="Psicólogo educativo" loading="lazy">
+                    </div>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Educación Emocional</li>
+                        <li><i class="fas fa-check"></i> Manejo de emociones</li>
+                        <li><i class="fas fa-check"></i> Apoyo en Neuropsicología</li>
+                        <li><i class="fas fa-check"></i> Orientación profesional</li>
+                        <li><i class="fas fa-check"></i> Sesiones 2 veces por semana</li>
+                    </ul>
+                </div>
+
+                <!-- Hábitos de Poder -->
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon habits">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Hábitos de Poder</h3>
+                    <div class="service-image">
+                        <img src="images/children-study.png" alt="Niños estudiando" loading="lazy">
+                    </div>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check"></i> Técnicas de organización</li>
+                        <li><i class="fas fa-check"></i> Gestión del tiempo</li>
+                        <li><i class="fas fa-check"></i> Motivación constante</li>
+                        <li><i class="fas fa-check"></i> Desarrollo de autonomía</li>
+                        <li><i class="fas fa-check"></i> Hábitos de estudio efectivos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekend Activities -->
+    <section class="weekend-activities">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Fines de Semana Recreativos</h2>
+            <p class="section-subtitle animate-on-scroll">¡Diversión total para recargar energías!</p>
+            
+            <div class="activities-grid">
+                <div class="activity-item animate-on-scroll">
+                    <i class="fas fa-utensils"></i>
+                    <h4>Gastronomía</h4>
+                </div>
+                <div class="activity-item animate-on-scroll">
+                    <i class="fas fa-palette"></i>
+                    <h4>Pintura</h4>
+                </div>
+                <div class="activity-item animate-on-scroll">
+                    <i class="fas fa-film"></i>
+                    <h4>Cine</h4>
+                </div>
+                <div class="activity-item animate-on-scroll">
+                    <i class="fas fa-music"></i>
+                    <h4>Baile</h4>
+                </div>
+                <div class="activity-item animate-on-scroll">
+                    <i class="fas fa-microphone"></i>
+                    <h4>Karaoke</h4>
+                </div>
+                <div class="activity-item animate-on-scroll">
+                    <i class="fas fa-scissors"></i>
+                    <h4>Manualidades</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="nosotros" class="about-us">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <h2 class="section-title">Quiénes Somos</h2>
+                    <p>En <strong>Homework Club O.C.T.O.</strong> creemos que cada niño tiene un potencial único que merece ser desarrollado en un ambiente de apoyo, comprensión y alegría.</p>
+                    
+                    <p>Nuestro equipo está conformado por profesionales apasionados por la educación, especializados en diferentes áreas del conocimiento y el desarrollo infantil. Combinamos la excelencia académica con el bienestar emocional, porque sabemos que un niño feliz aprende mejor.</p>
+                    
+                    <p>Con años de experiencia en educación y psicología infantil, hemos creado un espacio donde el aprendizaje se convierte en una aventura emocionante, donde cada logro se celebra y cada desafío se convierte en una oportunidad de crecimiento.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Atención Personalizada</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">7</div>
+                            <div class="stat-label">Días a la Semana</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">+50</div>
+                            <div class="stat-label">Niños Felices</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image animate-on-scroll">
+                    <img src="images/nuestroEquipo.png" alt="Nuestro equipo" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Lo Que Dicen los Padres</h2>
+            <p class="section-subtitle animate-on-scroll">Testimonios reales de familias satisfechas</p>
+            
+            <div class="testimonials-carousel">
+                <div class="testimonials-wrapper" id="testimonialsWrapper">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="images/parent1.jpg" alt="María González" loading="lazy">
+                            <div class="testimonial-info">
+                                <h4>María González</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Desde que mi hijo asiste a O.C.T.O., ha mejorado notablemente sus calificaciones y sobre todo su actitud hacia el estudio. El equipo es increíblemente profesional y cariñoso."</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="images/parent2.jpg" alt="Carlos Ramírez" loading="lazy">
+                            <div class="testimonial-info">
+                                <h4>Carlos Ramírez</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Las actividades de fin de semana son fantásticas. Mi hija no solo mejora académicamente, sino que también se divierte y hace amigos. ¡Totalmente recomendado!"</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="images/parent3.jpg" alt="Ana Martínez" loading="lazy">
+                            <div class="testimonial-info">
+                                <h4>Ana Martínez</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"El apoyo emocional que brindan es excepcional. La psicóloga educativa ha ayudado mucho a mi hijo a manejar su ansiedad antes de los exámenes."</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="images/parent4.jpg" alt="Roberto Silva" loading="lazy">
+                            <div class="testimonial-info">
+                                <h4>Roberto Silva</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Los grupos pequeños permiten una atención personalizada que en el colegio no es posible. Mi hija finalmente entiende las matemáticas. ¡Gracias O.C.T.O.!"</p>
+                    </div>
+                </div>
+                
+                <button class="testimonial-control prev" id="prevTestimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="testimonial-control next" id="nextTestimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Galería de Momentos</h2>
+            <p class="section-subtitle animate-on-scroll">Capturas de nuestro día a día</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item animate-on-scroll">
+                    <img src="images/clasesDinamicas.png" alt="Clases dinámicas" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Clases Dinámicas</h4>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="images/trabajoGrupo.png" alt="Trabajo en grupo" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Trabajo en Grupo</h4>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="images/atencionPersonalizada.png" alt="Atención personalizada" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Atención Personalizada</h4>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="images/apoyoEmocional.png" alt="Apoyo emocional" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Apoyo Emocional</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Preguntas Frecuentes</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq1-answer">
+                        <span>¿Cuál es el horario de atención?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq1-answer">
+                        <p>Nuestro horario de atención es de lunes a viernes de 2:00 PM a 6:30 PM. Los fines de semana ofrecemos actividades recreativas especiales.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq2-answer">
+                        <span>¿Cuántos niños hay por grupo?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq2-answer">
+                        <p>Trabajamos con grupos pequeños de máximo 8-10 niños para garantizar una atención personalizada y efectiva.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq3-answer">
+                        <span>¿Ofrecen servicio de psicología?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq3-answer">
+                        <p>Sí, contamos con apoyo especializado en Neuropsicología y Educación Profesional, con sesiones disponibles 2 veces por semana bajo requerimiento.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq4-answer">
+                        <span>¿Qué edades atienden?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq4-answer">
+                        <p>Atendemos niños desde preescolar hasta secundaria, con programas adaptados a cada nivel educativo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq5-answer">
+                        <span>¿Cómo son las clases de inglés?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq5-answer">
+                        <p>Utilizamos métodos dinámicos y conversacionales, enfocados en el aprendizaje práctico del idioma a través de juegos, canciones y actividades interactivas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq6-answer">
+                        <span>¿Debo inscribirme para todo el año?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer" id="faq6-answer">
+                        <p>Ofrecemos planes mensuales, trimestrales y anuales. Puedes elegir el que mejor se adapte a tus necesidades.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="precios" class="pricing">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Nuestros Planes</h2>
+            <p class="section-subtitle animate-on-scroll">Elige el plan que mejor se adapte a tus necesidades</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card animate-on-scroll">
+                    <div class="pricing-header">
+                        <h3>Plan Básico</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">150.000</span>
+                            <span class="period">/mes</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Apoyo en tareas diarias</li>
+                        <li><i class="fas fa-check"></i> Refuerzo académico</li>
+                        <li><i class="fas fa-check"></i> Lunes a Viernes (2-6:30 PM)</li>
+                        <li><i class="fas fa-check"></i> Grupos pequeños</li>
+                        <li><i class="fas fa-times"></i> Apoyo psicológico</li>
+                        <li><i class="fas fa-times"></i> Actividades de fin de semana</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-outline">Más Información</a>
+                </div>
+
+                <div class="pricing-card featured animate-on-scroll">
+                    <div class="badge">Más Popular</div>
+                    <div class="pricing-header">
+                        <h3>Plan Completo</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">250.000</span>
+                            <span class="period">/mes</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Todo del Plan Básico</li>
+                        <li><i class="fas fa-check"></i> Clases de inglés</li>
+                        <li><i class="fas fa-check"></i> Apoyo psicológico (2x semana)</li>
+                        <li><i class="fas fa-check"></i> Actividades de fin de semana</li>
+                        <li><i class="fas fa-check"></i> Educación emocional</li>
+                        <li><i class="fas fa-check"></i> Reporte mensual de avance</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary">Reservar Cupo</a>
+                </div>
+
+                <div class="pricing-card animate-on-scroll">
+                    <div class="pricing-header">
+                        <h3>Plan Premium</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">350.000</span>
+                            <span class="period">/mes</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Todo del Plan Completo</li>
+                        <li><i class="fas fa-check"></i> Atención 1 a 1 disponible</li>
+                        <li><i class="fas fa-check"></i> Neuropsicología especializada</li>
+                        <li><i class="fas fa-check"></i> Preparación para exámenes</li>
+                        <li><i class="fas fa-check"></i> Material didáctico incluido</li>
+                        <li><i class="fas fa-check"></i> Seguimiento personalizado</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-outline">Más Información</a>
+                </div>
+            </div>
+
+            <p class="pricing-note animate-on-scroll">
+                <i class="fas fa-info-circle"></i> 
+                Todos los planes incluyen material de apoyo y refrigerio. Descuentos especiales para hermanos.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">¡Asegura Tu Cupo Hoy!</h2>
+            <p class="section-subtitle animate-on-scroll">Estamos listos para ayudarte</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Ubicación</h4>
+                            <p>Conjunto Mi Futuro Etapa 1 Casa 19A<br>Girardot, Colombia</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Teléfono</h4>
+                            <p>+57 300 5040518</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@homeworkclubocto.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Horario</h4>
+                            <p>Lunes a Viernes: <br>2:00 PM - 6:30 PM<br>
+                            Sábados y Domingos: <br>Actividades recreativas</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <h4>Síguenos</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-cta animate-on-scroll">
+                    <div class="cta-box">
+                        <h3>¿Listo para comenzar?</h3>
+                        <p>Contáctanos por WhatsApp y agenda una visita para conocer nuestras instalaciones</p>
+                        <a href="https://wa.me/573005040518?text=Hola,%20me%20interesa%20información%20sobre%20Homework%20Club%20O.C.T.O." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> Chatear por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="O.C.T.O. Logo" loading="lazy">
+                        <h3>O.C.T.O.</h3>
+                    </div>
+                    <p>Orientación • Conocimiento • Talento • Optimismo</p>
+                    <p class="footer-slogan">Más que tareas, un espacio para brillar</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#precios">Precios</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#servicios">Refuerzo Escolar</a></li>
+                        <li><a href="#servicios">English Learning</a></li>
+                        <li><a href="#servicios">Apoyo Psicológico</a></li>
+                        <li><a href="#servicios">Hábitos de Poder</a></li>
+                        <li><a href="#servicios">Actividades Recreativas</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Conjunto Mi Futuro Etapa 1 Casa 19A</li>
+                        <li><i class="fas fa-phone"></i> +57 300 5040518</li>
+                        <li><i class="fas fa-envelope"></i> info@homeworkclubocto.com</li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Homework Club O.C.T.O. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/573005040518?text=Hola,%20me%20interesa%20información%20sobre%20Homework%20Club%20O.C.T.O." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

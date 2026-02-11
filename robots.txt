@@ -1,0 +1,37 @@
+# robots.txt para Homework Club O.C.T.O.
+# https://www.homeworkclubocto.com/robots.txt
+
+# Permitir a todos los bots
+User-agent: *
+Allow: /
+
+# Directorios a excluir (si los hay)
+# Descomenta si tienes un área de administración o privada
+# Disallow: /admin/
+# Disallow: /private/
+
+# Archivos específicos a excluir
+Disallow: /.htaccess
+Disallow: /.env
+Disallow: /README.md
+
+# Googlebot específico
+User-agent: Googlebot
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Googlebot para imágenes
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Sitemap (actualiza con tu dominio real)
+# Sitemap: https://www.homeworkclubocto.com/sitemap.xml
+
+# Crawl-delay (opcional, para controlar frecuencia de rastreo)
+# Crawl-delay: 10
